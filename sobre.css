@@ -222,7 +222,7 @@ footer {
         height: 100%;
         align-items: center;
         justify-content: center;
-        background: linear-gradient(0deg, rgba(247,232,200,1) 0%, rgba(255,214,32,1) 100%);
+        background: linear-gradient(0deg, rgb(204, 147, 24) 0%, rgba(255,214,32,1) 100%);
         padding: 10px 0; 
         text-align: center; 
     }

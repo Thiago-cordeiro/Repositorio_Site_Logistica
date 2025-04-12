@@ -20,7 +20,7 @@ a{
 }
 .navbar {
     width: 100%;
-    height: 80px;
+    height: 50px;
     display: flex; 
     justify-content: space-between; 
     align-items: center;  
@@ -42,13 +42,12 @@ a{
 .nav-links {
     list-style: none;
     display: flex;
-    margin-top: 10px;
     gap: 20px;
     
 }
 
 .nav-links a:hover{
-  color: #007bff;
+  color: #ffffff;
 }
 
 /* Define o estilo dos links do menu */
@@ -263,8 +262,9 @@ button {
 
 /* Clientes */
 .section-Cliente{
-    height: 90dvh;
     width: 100%;
+    height: 90dvh;
+    background-color: #e6e6e6;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -288,14 +288,14 @@ button {
 
 }
 .cardcliente {
-    width: 300px;
+    width: 300px;  
     background: white;
     padding: .4em;
     border-radius: 6px;
 }
   
 .card-image {
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(236, 239, 245);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -346,12 +346,14 @@ button {
 /*feedbacks*/
 .feedback-section {
     width: 100%;
-
-    margin-top: 5dvh;
-    margin-bottom: 5dvh;
     padding: 10px;
     text-align: center;
-    background-color: #ffd620;
+    background-color: #0f0f0f;
+    color: #f8f9fa;
+}
+.feedback-section h2{
+
+    padding-top: 30px;
 }
 .feedback-grid {
     max-width: 1200px;
@@ -362,7 +364,7 @@ button {
     padding: 20px;
 }
 .feedback-card {
-    background: white;
+    background: 0f0f0f;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(252, 171, 65, 0.514);
@@ -380,23 +382,28 @@ button {
 .faq-container{
 
     width: 100%;
-    height: 50dvh;
-    margin: 5dvh;
+    height: 600px;
+    margin: 5dvw;
     text-align: left;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
+
 .cont-perg{
-    width: 100%;
+    max-width: 600px;
+    height: 700px;
+    padding: 30px;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
 }
 .perg{
 
-    height: 80px;
+    width: 500px;
+    height: 200px;
     gap: 10px;
 
 }
@@ -404,7 +411,7 @@ button {
 .contact-section{
 
     width: 100%;
-    height: 50dvh;
+    height: 300px;
     background-color: #ffd620;
     display: flex;
 }
@@ -446,18 +453,22 @@ footer {
     background-color: #f8fafc;
     padding: 20px;
     text-align: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
+
+    width: 100%;
     display: flex;
     align-items: center;
-    gap: 15px;
+    justify-content: space-around;
 }
 
 .footer-info h2 {
-    color: #2176ff;
+    color: #f1d324;
     margin-bottom: 10px;
 }
 
@@ -480,7 +491,7 @@ footer {
 .footer-links {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: right;
     gap: 5px;
 }
 
@@ -516,21 +527,18 @@ footer {
         gap: 5px;
     }
     .nav-links li{
-        
         border-radius: 15px;
         width: 300px;
         height: 80px;
         display: flex;
         align-items: center;
         justify-content: center;
-
-                
-            backdrop-filter: blur(30px);
-            -webkit-backdrop-filter: blur(6px);
-            border-radius: 15px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.158);
-    }
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(6px);
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.158);
+        }
 
     .nav-links li a{
         font-size: 1.5rem;
@@ -539,33 +547,47 @@ footer {
     .nav-links.active {
         display: flex; /* Exibe o menu */
     }
-
+    .section-Cliente{
+        height: 1200px;
+    }
     .cliente-cards-area{
         flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
     }
 
     .feedback-section{
         margin-top: 75dvh;
     }
+    
+    .feedback-section h2{
+        font-size: 2rem;
+    }
     .cont-perg{
         flex-direction: column;
+        margin-bottom: 40px;
         
     }
     .contact-section{
-        margin-top: 25dvh;
-        height: 100dvh;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        
+    }
+    
+    .perg{
+        font-size: small;
+        max-width: 350px;
     }
     .mapa{
         width: 100%;
-        height: 60%;
+        height: 50%;
     }
     .contatos{
         width: 100%;
-        height: 600px;
+        height: 50%;
         padding: 10px;
         text-align: left;
     }
@@ -576,6 +598,8 @@ footer {
     }
     .footer-container{
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
     .footer-info{
         width: 50%;
