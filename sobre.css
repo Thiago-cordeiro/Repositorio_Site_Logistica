@@ -27,26 +27,22 @@ a{
     text-decoration: none;
     color: #ffffff;
 }
+
 .navbar {
     width: 100%;
-    height: 70px;
+    height: 50px;
     display: flex; 
     justify-content: space-between; 
     align-items: center;  
     background-color: #ffd620; 
-    padding: 10px 20px; 
+    padding:  30px 50px; 
 }
-/* Define o estilo da logo */
-.logo {
-    color: #262702; 
-    font-size: 24px; 
-    font-weight: bold; 
-}
+
 
 /* Estiliza o botão do menu mobile */
 .menu-toggle {
     display: none; 
-    background: none; 
+    background: none;
     border: none; 
     color: #262702; 
     font-size: 28px; 
@@ -56,12 +52,12 @@ a{
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px; 
+    gap: 20px;
     
 }
 
 .nav-links a:hover{
-  color: #007bff;
+  color: #ffffff;
 }
 
 /* Define o estilo dos links do menu */
@@ -71,8 +67,6 @@ a{
     color: #0a0a0a;
     font-size: 18px; 
 }
-
-
 
 /* Hero Section */
 .hero {
@@ -159,18 +153,19 @@ footer {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
+
+    width: 100%;
     display: flex;
     align-items: center;
-    gap: 15px;
+    justify-content: space-around;
 }
 
 .footer-info h2 {
-    color: #2176ff;
+    color: #f1d324;
     margin-bottom: 10px;
 }
 
@@ -193,7 +188,7 @@ footer {
 .footer-links {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: right;
     gap: 5px;
 }
 
@@ -204,7 +199,7 @@ footer {
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .menu-toggle {
         display: block;
     }
@@ -221,20 +216,26 @@ footer {
         width: 100%; 
         height: 100%;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         background: linear-gradient(0deg, rgb(204, 147, 24) 0%, rgba(255,214,32,1) 100%);
-        padding: 10px 0; 
+        padding: 10px 0;
+        padding-bottom: 90px; 
         text-align: center; 
+        gap: 5px;
     }
     .nav-links li{
-        border: 1px solid #ccc3c3;
         border-radius: 15px;
         width: 300px;
-        height: 100px;
+        height: 80px;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(6px);
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.158);
+        }
 
     .nav-links li a{
         font-size: 1.5rem;
@@ -245,11 +246,12 @@ footer {
     }
     .about{
         text-align: left;
-        height: 90%;
+        height: 100%;
     }
     .footer-container{
         width: 100%;
-        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
     }
     .footer-info{
         width: 50%;
