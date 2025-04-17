@@ -71,14 +71,13 @@ a{
 /* Hero Section */
 .hero {
     width: 100%;
-    height: 70vh;
+    height: 500px;
     background: url('IMG/empresaLogistica.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
-    
     padding: 20px;
 }
 
@@ -89,17 +88,18 @@ a{
 }
 
 .about{
-    text-align: center;
     display: flex;
+    text-align: left; 
     flex-direction: column;
     align-items: center;
     justify-content: center;
     max-width: 1200px;
-    height: 400px;
-    gap: 10px;
+    gap: 30px;
     margin: 10px 50px;
 }
-
+.about h2{
+ color: rgb(1, 96, 185);
+}
 
 .container-beneficios {
     display: flex;
@@ -123,7 +123,10 @@ a{
     background-color: #f8f8f5;
     
 }
-.valores h1{
+.valores h2{
+    margin-top: 5dvh;
+}
+.valores-list{
     margin-top: 5dvh;
 }
 
@@ -138,7 +141,8 @@ a{
     box-shadow: 15px 15px 30px #bebebe,
                -15px -15px 30px #ffffff;
     transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;         
-    color: #bebebe;  
+    color: #636161;  
+    padding: 10px;
 }
 .card:hover {
     box-shadow: 15px 15px 30px #f7f5a7,
@@ -247,6 +251,9 @@ footer {
     .about{
         text-align: left;
         height: 100%;
+    }
+    .contatos{
+        flex-direction: column;
     }
     .footer-container{
         width: 100%;

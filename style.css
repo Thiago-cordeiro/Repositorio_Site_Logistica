@@ -113,7 +113,7 @@ a{
     justify-content: space-around;
     width: 100%;
     height: 150px;
-    background-image: url(IMG/caminhaoEstrada.jpg);
+    background-image: url(IMG/container-terminal-3593640_1280.jpg);
     border-radius: 5px;
     background-size: cover;
 }
@@ -126,7 +126,7 @@ a{
     justify-content: space-around;
     width: 100%;
     height: 150px;
-    background-image: url(IMG/caminhaoDeserto.jpg);
+    background-image: url(IMG/truck-2138974_1280.jpg);
     border-radius: 5px;
     background-size: cover;
 }
@@ -153,7 +153,7 @@ a{
     align-items: center;
     justify-content: space-around;
     height: 150px;
-    background-image: url(IMG/entrega.jpg);
+    background-image: url(IMG/caminhaoEstrada.jpg);
     border-radius: 5px;
     background-size: cover;
 }
@@ -342,7 +342,7 @@ button {
 .name:hover {
     cursor: pointer;
 }
-/*asdnais*/
+/*contratar*/
 .pqContratar{
     width: 100%;
     height: 500px;
@@ -378,78 +378,130 @@ button {
     color: #04ce1f;
 }
 
-/*fac e localização*/
-.faq-container{
-    background-color: rgb(236, 239, 245);
-    padding-top: 30px;
-    width: 100%;
-    height: 600px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.cont-perg{
-    max-width: 600px;
-    height: 700px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: space-around;
-}
-.perg{
-
-    width: 500px;
-    height: 200px;
-    gap: 10px;
-
-}
 /*contacts*/
-.contact-section{
-
+.secao-localizacao {
+    padding: 40px 20px;
+    width: 100%;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .bloco-local {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .mapa {
     width: 100%;
     height: 300px;
-    background-color: #1b1b1a;
-    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .info-contato {
+    padding: 10px;
+  }
+  
+  .info-contato h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .info-contato p {
+    color: #555;
+    margin: 4px 0;
+    font-size: 1rem;
+  }
+  
+  .info-contato .mensagem {
+    margin-top: 10px;
+    font-style: italic;
+    color: #444;
+  }
+
+/*fac==*/
+.faq-section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 50px;
+    border-radius: 5%;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+               -15px -15px 30px #ffffff;
+    transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;         
+    color: #bebebe;  
 }
-.mapa{
-    width: 50%;
-    border-radius: 30px;
-}
-.contatos{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-    background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.541)), url('IMG/empresaLogistica.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-        
-}
-.card-ctt{
+  
+  .faq-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .faq-divider {
+    width: 100px;
+    height: 3px;
+    background-color: #0077cc;
+    margin: 0 auto 30px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .faq-list {
     display: flex;
     flex-direction: column;
+    gap: 15px;
+  }
+  
+  .faq-item {
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  }
+  
+  .faq-question {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
     text-align: left;
-    justify-content: space-around;
-    width: 400px;
-    height: 250px;
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(5px);
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    background-color: #0077cc;
     color: white;
-    font-size: 18px;
-}
-.card-ctt p{
-    font-size:15px;
-}
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .faq-question:hover {
+    background-color: #005fa3;
+  }
+  
+  .faq-answer {
+    padding: 15px 20px;
+    display: none;
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .faq-answer p {
+    margin: 5px 0;
+  }
 
+/*FAC==*/ 
 footer {
     background-color: #f8fafc;
     padding: 20px;
@@ -501,6 +553,25 @@ footer {
     text-decoration: none;
     font-size: 14px;
 }
+
+  @media (min-width: 768px) {
+    .bloco-local {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .mapa, .info-contato {
+      flex: 1;
+    }
+  
+    .mapa {
+      height: 250px;
+    }
+  
+    .info-contato {
+      padding-left: 30px;
+    }
+  }
 
 
 @media (max-width: 1000px) {
@@ -570,22 +641,14 @@ footer {
         max-width: 400px;
     }
     .contact-section{
-        height: 100%;
         display: flex;
+        height: 2000px;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         
     }
-    
-    .perg{
-        font-size: small;
-        max-width: 350px;
-    }
-    .mapa{
-        width: 100%;
-        height: 300px;
-    }
+
     .pqContratar{
         flex-direction: column;
         height: 800px;
@@ -597,16 +660,8 @@ footer {
     .cnt-dir{
         width: 100%;
     }
-    .contatos{
+    .faq-item{
         width: 100%;
-        height: 50%;
-        padding: 10px;
-        text-align: left;
-    }
-    .card-ctt{
-        padding: 10px;
-        gap: 10px;
-        height: 300px;
     }
     .footer-container{
         width: 100%;
@@ -617,19 +672,17 @@ footer {
         width: 50%;
     }
 }
-@media (max-width: 400px){
-
-    .cont-perg{
-        max-width: 300px;
-        align-items: center;
+@media (max-width: 600px) {
+    .faq-item{
+        width: 300px;
     }
-    .faq-container{
-        height: 750px;
+    .faq-question {
+      font-size: 1rem;
+      padding: 10px 16px;
     }
-    .perg{
-        width: 200px;
+  
+    .faq-answer {
+      font-size: 0.9rem;
+      padding: 12px 16px;
     }
-    .contact-section{
-        margin-top: 30dvh;
-    }
-} 
+  }

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - LOG INVOCAÇÂO</title>
+    <link rel="icon" type="image/png" href="IMG/Vector.svg">
+    <link rel="stylesheet" href="cliente.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="IMG/Vector.svg" style="width: 40px; margin-top: 10px;"></div>
+        <button class="menu-toggle" id="menuToggle">&#9776;</button> 
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">home</a></li>
+            <li><a href="index.html#segmentos">segmentos</a></li>
+            <li><a href="index.html#soluçoes">soluções</a></li>
+            <li><a href="index.html#clientes">clientes</a></li>
+            <li><a href="index.html#contato">contatos</a></li>
+        </ul>
+    </nav>
+
+    <section class="valores" id="soluçoes">
+        <h1 style="font-size: 50px; color: #f1cf08;">Clientes</h1>
+        <p>Esses clientes e muitos outros clientes confiaram na log inovação.</p>
+        <hr class="linha">
+
+        <div class="container-beneficios">
+                <div class="cardcliente" style="border: 1px solid rgba(0, 0, 0, 0.205);">
+                    <div class="card-image" style="background-color: rgb(255, 255, 255);border: 1px solid rgba(0, 0, 0, 0.205);;background-image: url(logos/CMACGM-h57.svg); background-size: 250px; background-position: center;"></div>
+                    <div class="category"> CMA CGM </div>
+                    <div class="heading">A CMA CGM confiou na nossa eficiência, pontualidade e segurança em cada operação.
+                    <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                </div>
+                </div>
+                <div class="cardcliente" style="border: 1px solid rgba(0, 0, 0, 0.205);">
+                    <div class="card-image" style="background-color: rgb(255, 255, 255);border: 1px solid rgba(0, 0, 0, 0.205);;background-image: url(logos/logo-grupo-4.svg); background-size: 200px; background-position: center"></div>
+                    <div class="category"> FERTIPAR </div>
+                    <div class="heading">A Fertipar contou com o nosso transporte especializado para garantir excelência na logística
+                    <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                </div>
+                </div>
+                <div class="cardcliente" style="border: 1px solid rgba(0, 0, 0, 0.205);">
+                    <div class="card-image" style="background-color: rgb(255, 255, 255);border: 1px solid rgba(0, 0, 0, 0.205);background-image: url(logos/WRK_BIG.svg); background-size: 250px; background-position: center"></div>
+                    <div class="category"> WESTROCK </div>
+                    <div class="heading">A WestRock valoriza nossa responsabilidade, agilidade e comprometimento
+                    <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                </div>
+                </div>
+                <div class="cardcliente" style="border: 1px solid rgba(0, 0, 0, 0.205);">
+                    <div class="card-image" style="border: 1px solid rgba(0, 0, 0, 0.205);background-color: rgb(255, 255, 255);background-image: url(logos/eldorado-brasil-papel-e-celulose-seeklogo.png); background-size: 250px; background-position: center"></div>
+                    <div class="category"> ELDORADO </div>
+                    <div class="heading">A Eldorado Brasil escolheu a nossa expertise para movimentar com confiança sua produção
+                    <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                </div>
+                </div>
+                <div class="cardcliente" style="border: 1px solid rgba(0, 0, 0, 0.205);">
+                    <div class="card-image" style="border: 1px solid rgba(0, 0, 0, 0.205);background-color: black;background-image: url(logos/vivixLogo.png); background-size: 250px; background-position: center"></div>
+                    <div class="category"> VIVIX </div>
+                    <div class="heading">A Vivix deposita confiança no nosso cuidado com cada etapa da entrega.
+                    <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                </div>
+                </div>
+                <div class="cardcliente" style="border: 1px solid rgba(0, 0, 0, 0.205);">
+                    <div class="card-image" style="background-color: rgb(255, 255, 255);border: 1px solid rgba(0, 0, 0, 0.205);background-image: url(logos/logo-cooperja.svg); background-size: 250px; background-position: center"></div>
+                    <div class="category"> COOPERJA </div>
+                    <div class="heading">A Cooperja reconhece nossa dedicação em oferecer soluções logísticas inteligentes.
+                    <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                </div>
+                </div>
+        </div>    
+
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h2>Log Inovação.</h2>
+            </div>
+            <div class="footer-links">
+                <p>©2025 Log Inovação, Inc</p>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+    </footer>       
+
+    <script>
+           const menuToggle = document.getElementById("menuToggle");
+            const navLinks = document.getElementById("navLinks");
+            const links = document.querySelectorAll('a');
+            const body = document.body;
+            let control = 0;
+
+            menuToggle.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+                if (control == 0){
+                    body.classList.add("no-scroll");
+                    control = 1;
+                } else {
+                    body.classList.remove("no-scroll");
+                    control = 0;
+                }
+            });
+            links.forEach(link => {
+                link.addEventListener("click", () => {
+                    body.classList.remove("no-scroll");
+                    navLinks.classList.remove("active");
+                    control = 0;
+                });
+            });               
+    </script>
+</body>
+</html>
