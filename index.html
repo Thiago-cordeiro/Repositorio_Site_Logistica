@@ -23,9 +23,9 @@
     <!-- Seção Principal -->
     <section class="hero" id="hero">
         <div class="hero-text">
-            <h2>CHEGUE MAIS LONGE COM A GENTE!</h2>
-            <p>Conectamos o seu negócio ao mundo com soluções logísticas ágeis e confiáveis.</p>
-            <button><a href="sobre.html">Sobre nós</a></button>
+            <h2 class="h2">CHEGUE MAIS LONGE COM A GENTE!</h2>
+            <p class="p">Conectamos o seu negócio ao mundo com soluções logísticas ágeis e confiáveis.</p>
+            <button class="bt"><a href="sobre.html">Sobre nós</a></button>
         </div>
     </section>
     <!-- Galeria -->
@@ -39,17 +39,17 @@
         
         <div class="grid-container">
             
-            <div class="img1"><h2>Portuário</h2></div>
-            <div class="img2"><h2>Agronegócio</h2></div>
-            <div class="img3"><h2>Industria de base</h2></div>
-            <div class="img4"><h2>Quimicos</h2></div>
+            <div class="img1"><h2 class="anim-text">Portuário</h2></div>
+            <div class="img2"><h2 class="anim-text">Agronegócio</h2></div>
+            <div class="img3"><h2 class="anim-text">Indústria de base</h2></div>
+            <div class="img4"><h2 class="anim-text">Químicos</h2></div>
             
         </div>
     </section>
     <!-- Agendamento -->
     <section class="booking">
         <p>Entre em contato e saiba mais!</p>
-        <button><a href="#contato">contato</a></button>
+        <button class="bt"><a href="#contato">contato</a></button>
     </section>
     <!-- Valores -->
     <section class="valores" id="soluçoes">
@@ -58,7 +58,7 @@
         <hr class="linha">
 
         <div class="container-beneficios">
-            <div class="card"><h3>Transporte especializado</h3></div>
+            <div class="card cd1"><h3 >Transporte especializado</h3></div>
             <div class="card"><h3>Cross-Docking</h3></div>
             <div class="card"><h3>Paletização</h3></div>
             <div class="card"><h3>Monitoramento e Segurança</h3></div>
@@ -70,7 +70,7 @@
         <div class="cnt-esq">
             .
         </div>
-        <div class="cnt-dir">
+        <div class="cnt-dir" class="anim-text">
             <h1>Por que contratar a <strong style="color: #ffd620;">Log Inovação?</strong></h1>
             <p>Na Log Inovação, oferecemos muito mais do que transporte</p>
             <p>entregamos confiança, eficiência e soluções sob medida para cada cliente.</p>
@@ -197,48 +197,10 @@
                 </div>
             </div>
     </footer> 
-        
-    <Script>
-            const menuToggle = document.getElementById("menuToggle");
-            const navLinks = document.getElementById("navLinks");
-            const links = document.querySelectorAll('a');
-            const body = document.body;
-            const perguntas = document.querySelectorAll(".faq-question");
-            let control = 0;
 
-            menuToggle.addEventListener("click", () => {
-                navLinks.classList.toggle("active");
-                if (control == 0){
-                    body.classList.add("no-scroll");
-                    control = 1;
-                } else {
-                    body.classList.remove("no-scroll");
-                    control = 0;
-                }
-            });
-            links.forEach(link => {
-                link.addEventListener("click", () => {
-                    body.classList.remove("no-scroll");
-                    navLinks.classList.remove("active");
-                    control = 0;
-                });
-            });        
-     
-            perguntas.forEach((btn) => {
-                btn.addEventListener("click", () => {
-                    const resposta = btn.nextElementSibling;
-              const isOpen = resposta.style.display === "block";
-
-                    // Fecha todas
-                    document.querySelectorAll(".faq-answer").forEach((ans) => ans.style.display = "none");
-
-                    // Abre se não estava aberto
-                    if (!isOpen) {
-                        resposta.style.display = "block";
-                    }
-                });
-            });                 
-    </Script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <Script src="script.js"></Script>
 
 </body>
 </html>

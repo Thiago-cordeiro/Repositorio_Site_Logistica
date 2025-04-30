@@ -72,7 +72,7 @@ a{
 }
 
 .hero-text {
-    background: rgba(0, 0, 0, 0.562);
+    background: rgba(0, 0, 0, 0.719);
     padding: 20px;
     border-radius: 8px;
 }
@@ -163,8 +163,8 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.402); 
-    backdrop-filter: blur(1px); 
+    background: rgba(0, 0, 0, 0.600); 
+    backdrop-filter: blur(2px); 
 }
 .img2 h2{
     width: 100%;
@@ -172,8 +172,8 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.339); 
-    backdrop-filter: blur(1px); 
+    background: rgba(0, 0, 0, 0.600); 
+    backdrop-filter: blur(2px); 
 }
 
 .img3 h2{
@@ -182,8 +182,8 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.371); 
-    backdrop-filter: blur(1px); }
+    background: rgba(0, 0, 0, 0.600); 
+    backdrop-filter: blur(2px); }
 
 .img4 h2{
     
@@ -192,8 +192,8 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.129); 
-    backdrop-filter: blur(1px);  
+    background: rgba(0, 0, 0, 0.600); 
+    backdrop-filter: blur(2px);   
 }
 
 /* Agendamento */
@@ -252,7 +252,7 @@ button {
     box-shadow: 15px 15px 30px #bebebe,
                -15px -15px 30px #ffffff;
     transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;         
-    color: #bebebe;  
+    color: #5e5454;  
 }
 .card:hover {
     box-shadow: 15px 15px 30px #f7f5a7,
