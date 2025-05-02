@@ -21,8 +21,8 @@
 
     <section class="hero" id="hero">
         <div class="hero-text">
-            <h1 style="font-size: 2rem;"><strong style="color: #f1cf08;">Logistica </strong><strong style="color: #08f142;">confiável</strong>, <strong style="color: #08f142;"> segura</strong> e <strong style="color: #08f142;">eficiente</strong></h1>
-            <p>Conectamos o seu negócio ao mundo com soluções logísticas ágeis e confiáveis.</p>
+            <h1 class="h2" style="font-size: 2rem;"><strong style="color: #f1cf08;">Logistica </strong><strong style="color: #08f142;">confiável</strong>, <strong style="color: #08f142;"> segura</strong> e <strong style="color: #08f142;">eficiente</strong></h1>
+            <p class="p">Conectamos o seu negócio ao mundo com soluções logísticas ágeis e confiáveis.</p>
         </div>
     </section>
 
@@ -78,30 +78,6 @@
     </footer>       
     
 
-    <script>
-           const menuToggle = document.getElementById("menuToggle");
-            const navLinks = document.getElementById("navLinks");
-            const links = document.querySelectorAll('a');
-            const body = document.body;
-            let control = 0;
-
-            menuToggle.addEventListener("click", () => {
-                navLinks.classList.toggle("active");
-                if (control == 0){
-                    body.classList.add("no-scroll");
-                    control = 1;
-                } else {
-                    body.classList.remove("no-scroll");
-                    control = 0;
-                }
-            });
-            links.forEach(link => {
-                link.addEventListener("click", () => {
-                    body.classList.remove("no-scroll");
-                    navLinks.classList.remove("active");
-                    control = 0;
-                });
-            });               
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

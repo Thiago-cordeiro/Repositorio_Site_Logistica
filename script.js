@@ -27,53 +27,51 @@ perguntas.forEach((btn) => {
         const resposta = btn.nextElementSibling;
   const isOpen = resposta.style.display === "block";
 
-        // Fecha todas
         document.querySelectorAll(".faq-answer").forEach((ans) => ans.style.display = "none");
 
-        // Abre se não estava aberto
         if (!isOpen) {
             resposta.style.display = "block";
         }
     });
 });                 
 
-
 gsap.registerPlugin(ScrollTrigger);
-
-gsap.from(".h2", {
-  scrollTrigger: {
-    trigger: ".text",     // elemento que ativa a animação
-    start: "top 80%",     // quando o topo do elemento chegar a 80% da altura da viewport
-    toggleActions: "play none none none"
-  },
-  opacity: 0,
-  y: 50,
-  duration: 1,
-  ease: "power1.in"
+gsap.set(".h2", { opacity: 0, y: 50 });
+gsap.utils.toArray(".h2").forEach((elemento) => {
+    gsap.to(elemento, {
+      scrollTrigger: {
+        trigger: elemento,
+        start: "top 80%",
+        toggleActions: "play none none none"          
+      },
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      ease: "power4.in"
+    });
 });
 gsap.from(".p", {
     scrollTrigger: {
-      trigger: ".text",     // elemento que ativa a animação
-      start: "top 80%",     // quando o topo do elemento chegar a 80% da altura da viewport
+      trigger: ".text",
+      start: "top 80%",
       toggleActions: "play none none none"
     },
     opacity: 0,
     y: 50,
     duration: 1.5,
-    ease: "power1.in"
+    ease: "power4.in"
 });
 gsap.from(".bt", {
     scrollTrigger: {
       trigger: ".text",     
-      start: "top bottom",     // ajustado para esperar mais do scroll
+      start: "top bottom",
       toggleActions: "play none none none"
     },
     opacity: 0,
-    y: 50,
+    x: 100,
     duration: 1.3,
-    ease: "power1.in"
+    ease: "power4.in"
   });
-  
 gsap.set(".anim-text", { opacity: 0, y: 30 });
 gsap.utils.toArray(".anim-text").forEach((el) => {
     gsap.to(el, {
@@ -88,4 +86,38 @@ gsap.utils.toArray(".anim-text").forEach((el) => {
       duration: 1.5,
       ease: "none"
     });
+});
+
+
+document.addEventListener("DOMContentLoaded", (event) => {   
+  gsap.registerPlugin(ScrollTrigger)
+  const areas = gsap.utils.toArray('.area')
+  areas.forEach(area => {
+    gsap.to(area,{
+      scale: 0.9,
+      duration: 2,
+      scrollTrigger:{
+        trigger: area,
+        start: '40% top',
+        end:'bottom top',
+        scrub: true
+      }
+    })
+  })
+
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const botao = document.getElementById('toggleGaleria');
+  const galeria = document.querySelector('.list');
+
+  if (botao && galeria) {
+      botao.addEventListener('click', () => {
+          galeria.classList.toggle('expandido');
+          galeria.classList.toggle('escondido');
+
+          botao.textContent = galeria.classList.contains('expandido') ? 'Ver menos' : 'Ver mais';
+      });
+      galeria.classList.add('escondido');
+  }
 });
