@@ -106,18 +106,3 @@ document.addEventListener("DOMContentLoaded", (event) => {
   })
 
 });
-
-document.addEventListener('DOMContentLoaded', () => {
-  const botao = document.getElementById('toggleGaleria');
-  const galeria = document.querySelector('.list');
-
-  if (botao && galeria) {
-      botao.addEventListener('click', () => {
-          galeria.classList.toggle('expandido');
-          galeria.classList.toggle('escondido');
-
-          botao.textContent = galeria.classList.contains('expandido') ? 'Ver menos' : 'Ver mais';
-      });
-      galeria.classList.add('escondido');
-  }
-});

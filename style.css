@@ -324,15 +324,6 @@ button {
     margin-bottom: 1em;
     border-radius: 10px;
   }
-
-  .escondido {
-    max-height: 200px; /* ajustável conforme altura das imagens */
-  }
-  
-  /* Estado expandido */
-  .expandido {
-    max-height: none; 
-  }
   
   button#toggleGaleria {
     background-color: #f1cf08;
